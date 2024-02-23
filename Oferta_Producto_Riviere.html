@@ -1,0 +1,205 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Invoice Riviere</title>
+    <link rel="stylesheet" href="boostrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      body {
+        background-color: #ffffff; /* Reemplaza 'URL_DE_TU_IMAGEN_DE_FONDO.jpg' con la URL de tu imagen de fondo */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .custom-tbai {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .custom-tbai .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .custom-tbai .qrtbai img {
+            width: 150px;
+            height: 150px;
+        }
+      /* Agrega estilos adicionales según sea necesario */
+      .pepe {
+        display: none;
+    }
+    .product-image {
+   width: 50px;
+   height: 50px;
+}
+
+      /* Resto de tu CSS existente */
+    </style>
+  </head>
+  <body>
+    <div class="invoicee">
+      <div class="invoice overflow-auto">
+        <div style="min-width: 600px;">
+          <header>
+            <div class="row">
+              <div class="col">
+                <a target="_blank">
+                  <img
+                    src="https://acortar.link/zT5Vo5"
+                    data-holder-rendered="true"
+                  />
+                </a>
+              </div>
+              <div class="col company-details">
+                <h2 class="name">
+                  <a target="_blank">
+                  Riviéere Joyeros SL
+                  </a>
+                </h2>
+                <div>CIF: B82284332</div>
+                <div>CALLE ARENAL, 10, 28013, Madrid, España</div>
+                <div>91 523 59 05</div>
+                <div>atc@rivierejoyeros.es</div>
+              </div>
+            </div>
+          </header>
+          <main>
+            <div class="row contacts">
+              <div class="col invoice-to">
+                <div class="text-gray-light">OFERTA PARA:</div>
+                <h2 class="to">&lt;&lt;[ClienteID].[ClienteNombre]&gt;&gt;</h2>
+                <div class="address">CIF: &lt;&lt;[ClienteID].[ClienteNumeroDocumento]&gt;&gt;</div>
+                <div class="address">TEL: &lt;&lt;[ClienteID].[ClienteTelefono]&gt;&gt;</div>
+                <div class="address">&lt;&lt;[ClienteID].[ClienteDomicilio]&gt;&gt;,&lt;&lt;[ClienteID].[ClienteLugarNacimiento]&gt;&gt;</div>
+                <div class="email">
+                  <a href="mailto:msantibanez.hys@gmail.com">
+                    &lt;&lt;[Email]&gt;&gt;
+                  </a>
+                </div>
+              </div>
+              <div class="col invoice-details">
+                <div class="date">Oferta de Producto</div>
+                <h1 class="invoice-id">N°: &lt;&lt;[Cod.Presupuesto]&gt;&gt;</h1>
+                <div class="date">Válido desde: &lt;&lt;[Fecha]&gt;&gt;</div>
+                <div class="date">Válido hasta: &lt;&lt;[PresupuestoFecha]&gt;&gt;</div>
+                <div class="date">ID: &lt;&lt;[PresupuestoID]&gt;&gt;</div>
+              </div>
+            </div>
+            <div class="notices">
+              <div>Descripción de la oferta:</div>
+              <div class="notice">&lt;&lt;[PresupuestoDescripción]&gt;&gt;</div>
+            </div>
+            <table border="0" cellspacing="0" cellpadding="0">
+              <thead>
+                <tr>
+                  <th class="text-left">IMG.</th>
+                  <th class="text-left" colspan="2">DESCRIPTION</th>
+                  <th>CANTIDAD</th>
+                  <th>IMPORTE UNITARIO</th>
+                  <th>DESCUENTO</th>
+                  <th class="text-right">TOTAL SIN IVA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <p>&lt;&lt;Start: SELECT(Detalle_presupuesto[IDDetallePresupuesto],[PresupuestoID]=[IDPresupuesto]) &gt;&gt;</p>
+                <tr>
+                  <td class="unit">&lt;&lt;[Imagen]&gt;&gt;</td>
+                  <td class="text-left" colspan="2">
+                    <h3>&lt;&lt;[Nombre]&gt;&gt;</h3>
+                    &lt;&lt;[Descripción]&gt;&gt; - Producto: &lt;&lt;[Estado del producto].[Estado del producto]&gt;&gt;, Sujeto a &lt;&lt;[IVA].[TIPO IVA]&gt;&gt;
+                  </td>
+                  <td class="text-center">1</td>
+                  <td class="no">&lt;&lt;[Precio sin IVA]&gt;&gt;</td>
+                  <td class="no"> &lt;&lt;[Descuento]&gt;&gt;</td>
+                  
+                
+                  <td class="total">&lt;&lt;[Nuevo Precio]&gt;&gt;</td>
+                </tr>
+                <p>&lt;&lt;End&gt;&gt;</p>
+              </tbody>
+              <thead>
+                <tr>
+                  <th class="RELLENO"></th>
+                  <th class="RELLENO" colspan="2"></th>
+                  <th class="RELLENO"></th>
+                  <th class="RELLENO">BASE IMPONIBLE</th>
+                  <th class="RELLENO">VALOR IVA</th>
+                  <th class="text-right RELLENO">CUOTA IVA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <p>&lt;&lt;Start: SELECT(Detalle_presupuesto[IDDetallePresupuesto],[PresupuestoID]=[IDPresupuesto]) &gt;&gt;</p>
+                <tr>
+                  <td class="RELLENO"</td>
+                  <td class="RELLENO" colspan="2">
+                    
+                  </td>
+                  <td class="text-center"></td>
+                  <td class="no">&lt;&lt;[Nuevo Precio]&gt;&gt;</td>
+                  <td class="no"> &lt;&lt;[IVA]&gt;&gt;</td>
+                  
+                
+                  <td class="total">&lt;&lt;[IVA IMPORTE]&gt;&gt;</td>
+                </tr>
+                <p>&lt;&lt;End&gt;&gt;</p>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3"></td>
+                  <td colspan="3"></td>
+                  <td><br></td>
+                </tr>
+               
+                <tr>
+                  <td colspan="3"></td>
+                  <td colspan="3">BASE IMPONIBLE</td>
+                  <td>&lt;&lt;[Nuevo importe]&gt;&gt;</td>
+                </tr>
+                <tr>
+                  <td colspan="3"></td>
+                  <td colspan="3">COUTA IVA</td>
+                  <td>&lt;&lt;[IVA]&gt;&gt;</td>
+                </tr>
+               
+                <tr>
+                  <td colspan="3"></td>
+                  <td colspan="3">IMPORTE TOTAL</td>
+                  <td>&lt;&lt;[Total]&gt;&gt;</td>
+                </tr>
+              </tfoot>
+            </table>
+            <div class="custom-tbai">
+              <div class="title">&lt;&lt;[tbai]&gt;&gt;</div>
+              <div class="qrtbai"><img src="&lt;&lt;[URL QR]&gt;&gt;" alt="Código QR" /></div>
+          </div>
+            <div class="thanks">Muchas Gracias!</div>
+            <div class="notices">
+              <div>Observaciones / Instrucciones:</div>
+              <div class="notice">
+                Los productos especificados como sujetos a REBU son mercancías sujetas a régimen fiscal especial sobre bienes usados, IVA no desglosable ni deducible.
+              </div>
+              <div class="notice">
+                Entorno de prueba : es posible que las facturas no obedezcan a operaciones reales
+              </div>
+            </div>
+          </main>
+          <footer>
+            Para preguntas relacionadas con esta factura, por favor, contacte a: <br>
+Teléfono: 91 523 59 05 <br>
+Correo: <a href="mailto:atc@rivierejoyeros.es">atc@rivierejoyeros.es</a> <br>
+Web: <a href="https://www.rivierejoyeros.es">www.rivierejoyeros.es</a>
+
+          </footer>
+        </div>
+
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
